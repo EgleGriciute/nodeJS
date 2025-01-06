@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration page</title>
+    <link rel="icon" type="image/png" href="./assets/images/flower.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+  <body>
+    <header>
+      <h1>
+        Register for a
+        <span class="font-accent__dance">dance</span> competition
+        <span class="font-accent__now">now!</span>💃
+      </h1>
+      <hr />
+    </header>
+    <main>
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="diamond-wrapper">
+            <div class="flower-accent__wrapper">
+              <img
+                src="./assets/images/flower.svg"
+                alt="flower"
+                class="flower-accent__big"
+              />
+              <img
+                src="./assets/images/flower.svg"
+                alt="flower"
+                class="flower-accent__medium"
+              />
+              <img
+                src="./assets/images/flower.svg"
+                alt="flower"
+                class="flower-accent__small"
+              />
+              <img
+                src="./assets/images/flower.svg"
+                alt="flower"
+                class="flower-accent__little"
+              />
+              <img
+                src="./assets/images/flower.svg"
+                alt="flower"
+                class="flower-accent__tiny"
+              />
+              <img
+                src="./assets/images/flower.svg"
+                alt="flower"
+                class="flower-accent__micro"
+              />
+              <img src="./assets/images/arrow-right.svg" alt="arrow-right" />
+            </div>
+            <img src="./assets/images/diamond.png" alt="dance-background" />
+          </div>
+          <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="age">Date of birth:</label>
+            <input
+              type="date"
+              id="age"
+              name="age"
+              min="1905-01-01"
+              max="2007-01-01"
+              required
+            />
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phoneNumber" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="validate-password">Validate password:</label>
+            <input
+              type="password"
+              id="validate-password"
+              name="validate-password"
+              required
+            />
+
+            <input type="submit" value="Register" />
+          </form>
+          <div id="errorMessage" class="alert" style="display: none"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
