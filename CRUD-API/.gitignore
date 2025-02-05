@@ -1,0 +1,15 @@
+node_modules/
+.env
+
+# Cypress configuration and logs
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+cypress/downloads/
+
+# If using specific plugins or extensions:
+node_modules/
+cypress.env.json
+
+# Temporary test artifacts
+*.log
